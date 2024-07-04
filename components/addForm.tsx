@@ -14,7 +14,7 @@ export default function AddForm() {
         await addNote(formData);
         form.current?.reset();
       }}
-      className="border-slate-300p-10 flex flex-col gap-3 rounded-lg border shadow shadow-slate-400"
+      className="flex flex-col gap-3 rounded-lg border border-slate-300 p-10 shadow shadow-slate-400"
     >
       <input
         type="text"

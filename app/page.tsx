@@ -1,6 +1,5 @@
 import prisma from "@/lib/prisma";
-import AddForm from "@/component/addForm";
-import Link from "next/link";
+import AddForm from "@/components/addForm";
 
 export default async function Home() {
   const notes = await prisma.post.findMany();
