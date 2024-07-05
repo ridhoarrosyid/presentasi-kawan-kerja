@@ -1,6 +1,6 @@
 import { useFormStatus } from "react-dom";
 
-export default function AddButton() {
+export default function EditButton() {
   const { pending } = useFormStatus();
 
   return (
@@ -8,7 +8,7 @@ export default function AddButton() {
       className={`rounded ${pending ? "bg-slate-500" : "bg-slate-700"} py-1 text-white`}
       disabled={pending}
     >
-      {pending ? "Adding note..." : "Add"}
+      {pending ? "Editing note..." : "Edit"}
     </button>
   );
 }
